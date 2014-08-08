@@ -40,13 +40,15 @@
 (setq ibuffer-saved-filter-groups
       (quote (;;("my-org" ("Org" (mode . org-mode)))
 	      ("default"      
+	       ("remote" (or (filename . "/Volumes/")))
 	       ("org" (mode . org-mode))  
 	       ("clojure" (mode . clojure-mode))
+	       ("python" (mode . python-mode))
 	       ("c" (or (mode . c-mode) (mode . c++-mode)))
 	       ("coffee" (mode . coffee-mode))
 	       ("elisp" (mode . emacs-lisp-mode))
-	       ("notes" (or (mode . markdown-mode)))
-	       ("remote" (or (filename . "/Volumes/")))
+	       ("notes" (or (mode . markdown-mode)
+			    (mode . text-mode)))
 	       ("dir" (mode . dired-mode))
 
 	       ;;("MyProject1"
@@ -58,12 +60,22 @@
 
 (setq ibuffer-show-empty-filter-groups nil)
 
+
 (add-hook 'ibuffer-mode-hook
-  (lambda ()
-    (ibuffer-auto-mode 1)
-    (ibuffer-switch-to-saved-filter-groups "default")))
+	  (lambda ()
+	    (ibuffer-auto-mode 1)
+	    (ibuffer-switch-to-saved-filter-groups "default")))
+
+(add-hook 'clojure-mode-hook
+	  (lambda () (paredit-mode t)))
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; Rainbow brackets everywhere:
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
+
 ;; With a pale theme (we're using "Clarity and Beauty"):
 (set-background-color "black")
+(set-face-background 'hl-line "#224")
+
+(setq-default cursor-type 'box)
