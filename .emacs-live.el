@@ -18,4 +18,5 @@
                   ~/GITHUB/cassiel/nemacs/packs/org-mode-bindings
                   ~/GITHUB/cassiel/nemacs/packs/miscellany
                   ~/GITHUB/cassiel/nemacs/packs/ibuffer
+                  ~/GITHUB/cassiel/nemacs/packs/git-annex
                   ~/GITHUB/cassiel/nemacs/packs/buffer-move))
