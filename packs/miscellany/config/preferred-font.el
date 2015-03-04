@@ -8,5 +8,4 @@
   (add-to-list 'default-frame-alist '(font . "Courier 12")))
 
  ((and (window-system) (eq system-type 'gnu/linux))
-  (add-to-list 'default-frame-alist '(font . "Ubuntu Mono 10"))
-  ))
+  (add-to-list 'default-frame-alist '(font . "Monospace 8"))))
