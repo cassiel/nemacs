@@ -27,4 +27,5 @@
                   ~/GITHUB/cassiel/nemacs/packs/ibuffer
                   ~/GITHUB/cassiel/nemacs/packs/git-annex
                   ~/GITHUB/cassiel/nemacs/packs/modes
-                  ~/GITHUB/cassiel/nemacs/packs/buffer-move))
+                  ~/GITHUB/cassiel/nemacs/packs/buffer-move
+                  ~/GITHUB/cassiel/nemacs/packs/scss-mode))
