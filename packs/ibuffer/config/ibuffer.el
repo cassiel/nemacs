@@ -10,6 +10,9 @@
 	       ("elisp" (mode . emacs-lisp-mode))
 	       ("notes" (or (mode . markdown-mode)
 			    (mode . text-mode)))
+               ("structured" (or (mode . xml-mode)
+                                 (mode . nxml-mode)))
+               ("shader" (mode . glsl-mode))
 	       ("dir" (mode . dired-mode))
 
 	       ;;("MyProject1"
