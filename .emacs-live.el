@@ -32,3 +32,5 @@
                   ~/GITHUB/cassiel/nemacs/packs/buffer-move
                   ~/GITHUB/cassiel/nemacs/packs/insert-unicode
                   ~/GITHUB/cassiel/nemacs/packs/scss-mode))
+
+(projectile-global-mode)
