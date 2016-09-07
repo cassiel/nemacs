@@ -7,5 +7,5 @@
 (live-load-config-file "bindings.el")
 
 (projectile-global-mode)
-(setq projectile-switch-project-action 'projectile-find-dir)
-(setq projectile-find-dir-includes-top-level t)
+(setq projectile-switch-project-action #'projectile-commander)
+;;(setq projectile-find-dir-includes-top-level t)
