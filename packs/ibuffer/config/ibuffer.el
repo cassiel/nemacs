@@ -3,7 +3,8 @@
 	      ("default"
 	       ("remote" (or (filename . "/Volumes/")))
 	       ("org" (mode . org-mode))
-	       ("clojure" (mode . clojure-mode))
+	       ("clojure" (or (mode . clojure-mode)
+                              (mode . clojurescript-mode)))
 	       ("python" (mode . python-mode))
 	       ("c" (or (mode . c-mode) (mode . c++-mode)))
 	       ("coffee" (mode . coffee-mode))
