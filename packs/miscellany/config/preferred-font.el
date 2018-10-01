@@ -5,7 +5,7 @@
            default-frame-alist)
 (cond
  ((and (window-system) (eq system-type 'darwin))
-  (add-to-list 'default-frame-alist '(font . "Input Mono 11")))
+  (add-to-list 'default-frame-alist '(font . "Courier 12")))
  ;; was: "Anonymous Pro 12"
 
  ((and (window-system) (eq system-type 'gnu/linux))
