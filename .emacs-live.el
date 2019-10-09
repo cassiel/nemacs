@@ -33,3 +33,7 @@
                   ;; ~/GITHUB/cassiel/nemacs/packs/insert-unicode
                   ~/GITHUB/cassiel/nemacs/packs/scss-mode
                   ~/GITHUB/cassiel/nemacs/packs/projectile))
+
+;; emacsformacosx:
+(setq mac-option-modifier nil)
+(setq mac-command-modifier 'meta)
